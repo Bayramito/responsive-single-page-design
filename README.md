@@ -4,13 +4,13 @@ A simple property application
 
 ## Technologies used
 
-Reach  
-SASS  
-HTML5
-Bootstrap
-Gulp
-Axios
-Express
+React    
+SASS    
+HTML5  
+Bootstrap  
+Gulp  
+Axios  
+Express  
 
 ## Description
 I made one of the sections in the design more dynamic than the other ones, thats why i built a inner server to the application just to simulate like a server. This server provides data to "Feedback" section in the design.  
