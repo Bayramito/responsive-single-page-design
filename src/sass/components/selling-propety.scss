@@ -1,0 +1,106 @@
+
+.selling-property {
+
+    .s-title {
+        color: $h2-title;
+        font-family: "Roboto", Arial, sans-serif;
+        font-weight: 600;
+        font-size: 2.5em;
+        padding-top: 3em;
+    }
+
+    .s-subtitle {
+        color: $h2-title;
+        padding-top: 1.2em;
+    }
+
+    p {
+        font-weight: 500;
+        font-family: "Montserrat", Arial, sans-serif;
+    }
+
+    .selling-specs {
+        padding-top: 3em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 7em;
+        text-align: center;
+        color: $h2-title;
+        padding-bottom: 2em;
+
+        .selling-spec {
+            
+            h4 {
+                padding-top: 2em;
+            }
+
+            .fa-database {
+                color: $green;
+                font-size: 3em;
+            }
+
+            .fa-box-open {
+                color: #01f1ff;
+                font-size: 3em;
+            }
+            .fa-camera {
+                color: #ebff00;
+                font-size: 3em;
+            }
+            .fa-handshake {
+                color: #3a003d;
+                font-size: 3em;
+            }
+            .fa-gem {
+                color: #fe0058;
+                font-size: 3em;
+            }
+        }
+    }
+    
+
+    .contact-agents{
+        background: #f7f8f9;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        padding: 2em;
+
+        h4 {
+            color: $h2-title;
+        }
+        .agent {
+          
+            display: flex;
+            font-size: .8rem;
+            align-items: center;
+             
+            img{
+                width: 50px;
+                height: 50px;
+            }
+            
+            .agent-info {
+                padding: .4rem;
+
+                .fa-phone, .fa-envelope-square {
+                    color: $red;
+                    margin-right: 5px;
+                }
+
+                p {
+                    margin: 0;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #333;
+
+                    &:hover {
+                        color: cornflowerblue;
+                    }
+                }
+            }
+        }
+    }
+}

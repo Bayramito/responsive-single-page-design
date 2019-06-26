@@ -1,0 +1,25 @@
+// Variables
+$bg: #370744;
+$red: #fd0057;
+$green: #01ff83;
+$d-green: #5e853c;
+$text-color: #ffffff;
+$h2-title: #3a003d;
+$w-bg: #fff;
+
+
+// Mixins
+@mixin box-shadow($top, $left, $blur, $color) {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    -o-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+
+@mixin border-radius($left, $right, $bright, $bleft) {
+  border-radius:$left $right $bright $bleft;
+  -webkit-border-radius:$left $right $bright $bleft;
+  -moz-border-radius:$left $right $bright $bleft;
+  -ms-border-radius:$left $right $bright $bleft;
+  -o-border-radius:$left $right $bright $bleft;
+}

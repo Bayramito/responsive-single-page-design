@@ -1,0 +1,110 @@
+.featured-section {
+    background: url('/img/interior.jpeg')no-repeat center;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+
+    .featured-active {
+        padding: 10em 0;
+
+        .featured-title {
+            padding: 6px 12px;
+            background: $h2-title;
+            color: #999;
+            font-weight: 600;
+
+            .fa-rocket {
+                color: $red;
+            }
+        }
+
+        .featured-inner {
+
+            padding: 3em 0;
+
+            .location {
+                padding: 0 2em;
+                
+                span {
+                    margin-right: 1.5em;
+                    color: $h2-title;
+                    font-weight: 500;
+                }
+
+                h1 {
+                    color: $h2-title;
+                }
+            }
+
+            .specs {
+                justify-content: space-between;
+                color: $h2-title;
+                font-weight: 500;
+                max-width: 70%;
+                h2 {
+                    font-size: 3em;
+                }
+            }
+        }
+
+        .featured-prize {
+            display: flex;
+            flex-direction: column;
+            padding: 3em 2em;
+
+            a {
+                padding: 2em 0;
+
+                &:hover{
+                    color: $green;
+                }
+            }
+        }
+
+        .f-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 2em 3em;
+            font-weight: bold;
+
+            .fa-check {
+                color: $red;
+            }
+        }
+    }
+
+    .featured-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+
+        .f-list-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,.7);
+
+            div {
+                padding: 1em .6em;
+                color: $text-color;
+                h4 {
+                    font-weight: 600;
+                    font-size: 1em;
+                    color: $text-color;
+                }
+            }
+            .fa-map-marker-alt {
+                font-size: 2em;
+                color: $text-color;
+            }
+
+            &.active {
+                background: $red;
+            }
+
+            &:hover {
+                background: rgba(0,0,0,.9);
+            }
+        }
+    }
+}

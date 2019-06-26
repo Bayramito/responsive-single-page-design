@@ -1,0 +1,15 @@
+@import '../variables.scss';
+
+.copyright {
+    background: #222;
+    color: $text-color;
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+        color: #fff;
+        font-weight: 500;
+    }
+}

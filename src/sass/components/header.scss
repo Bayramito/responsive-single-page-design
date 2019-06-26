@@ -1,0 +1,94 @@
+header {
+    background: url("/img/building-3.jpg") no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+
+    .navbar-brand {
+        font-weight: 700;
+        color: $green !important;
+
+        .fa-door-open {
+            font-size: 1.4em;
+            color: $red;
+        }
+    }
+
+    // Navbar Items
+    .top-navigation {
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+        .nav-item {
+            margin-left: 1.5em;
+
+            .nav-link {
+                font-size: 0.9em;
+                font-weight: 600;
+                color: $text-color;
+                &:hover {
+                    color: darken($text-color, 30%);
+                    border-bottom: 1px solid $green;
+                }
+            }
+        }
+    }
+
+    // Hero Section
+    .hero-section {
+        z-index: 20;
+        position:  relative;
+
+        h1 {
+            color: $green;
+            font-size: 5em;
+            font-weight: 700;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .search-wrapper {
+            display: flex;
+            border-bottom: 2px solid $d-green;
+            padding-left: 0;
+            padding-right: 0;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                background: transparent;
+                border: none;
+                font-size: 1.4em;
+                width: 100%;
+                padding: 10px;
+                color: $text-color;
+                outline: none;
+                &::placeholder {
+                    color: $text-color;
+                }
+            }
+
+            .fa-search {
+                font-size: 1.6em;
+                color: $red;
+            }
+        }
+        
+        .popular {
+            display: flex;
+            justify-content: space-between;
+            color: $text-color;
+            padding-bottom: 8em;
+            .popular-item {
+                a {
+                    padding: 6px 13px;
+                    background: $red;
+
+                    &:hover {
+                        color: darken($text-color, 80%);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

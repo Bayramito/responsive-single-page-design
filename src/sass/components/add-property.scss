@@ -1,0 +1,53 @@
+.add-property{
+
+    padding: 5em;
+    background: $h2-title;
+    color: $text-color;
+
+    .ap-left {
+
+        h3 {
+            color: $green;
+            font-size: 2em;
+            font-weight: 600;
+        }
+    }
+
+    .ap-right {
+
+        .ap-fields {
+            
+            input {
+                margin-right: 2.5em;
+                padding: .4em;
+            }
+
+            .btn-join {
+                padding: .4em 1.5em;
+            }
+        }
+
+        .ap-options {
+            padding-top: .8em;
+            
+            label {
+                margin-right: .8em;
+                display: flex;
+                align-items: center;
+                padding-right: .5em;
+
+                input[type=checkbox] {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                input[type=text] {
+                    width:50%;
+                }
+                span {
+                    margin-left: .5em;
+                }
+            }
+        }
+    }
+}

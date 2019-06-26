@@ -1,0 +1,372 @@
+@import 'variables.scss';
+
+/*==========================================================================
+  1200px brekpoint
+==========================================================================*/
+@media (max-width: 1200px) {
+    .latest-section .latest-items {
+        grid-template-columns: 1fr 1fr;
+
+        .latest-item {
+            width: auto;
+            margin-top: 5em;
+
+            .item-description {
+                text-align: center;
+
+                .specs {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .selling-property {
+        
+        .selling-specs {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+
+/*==========================================================================
+  992px breakpoint
+==========================================================================*/
+@media (max-width: 992px) {
+    .hero-section {
+        h1 {
+            font-size: 3em!important;
+        }
+    }
+
+    .add-property {
+
+        .ap-right {
+
+            .btn-join {
+                margin-top: 1em;
+            }
+        }
+    }
+
+    .featured-section {
+
+        .f-list-item {
+            padding: .2em 2em;
+            .fa-map-marker-alt {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    .selling-property {
+
+        .selling-specs {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .about-section {
+
+        .offset-md-6{
+            margin-left: 0;
+        }
+        .col-md-6 {
+            max-width: 100%;
+
+        }
+    }
+
+    .footer-section {
+
+        .fs-items {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+/*==========================================================================
+  760px breakpoint
+==========================================================================*/
+@media (max-width: 768px) {
+
+    .hero-section {
+        h1 {
+            font-size: 2em!important;
+        }
+
+        .popular {
+            flex-direction: column;
+
+            .popular-item {
+                margin-top: 1em;
+            }
+        }
+    }
+
+    .latest-section {
+
+        .latest-title {
+            h2 {
+                font-size: 2em;
+            }
+        }
+
+        .latest-items {
+            grid-template-columns: 1fr;
+
+            .latest-item {
+
+                height: auto;
+            }
+        }
+    }
+
+    .featured-section {
+
+        .featured-active {
+            .featured-prize {
+                padding: 0;
+                .btn-status, .btn-price {
+                    width: 50%;
+                    margin: .5em auto;
+                }
+            }
+        }
+
+        .featured-list {
+            grid-template-columns: 1fr;
+
+            .f-list-item {
+                margin-bottom: 1em;
+            }
+        }
+    }
+
+    .selling-property {
+
+        .selling-specs {
+            grid-template-columns: 1fr;
+        }
+
+        .contact-agents {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .add-property {
+
+        padding: 2em 0;
+        .row {
+            margin: 0;
+            flex-direction: column;
+            
+            .ap-fields {
+                input {
+                    margin-top: 1em;
+                }
+            }
+            .btn-join {
+                width: 50%;
+                margin: 1em auto;
+
+            }
+        }
+    }
+
+    .about-section {
+
+        .information {
+            padding: 2em 1em!important;
+        }
+    }
+
+    .feedback-section {
+
+        .row {
+
+            .arrows {
+                padding: 0;
+                a {
+                    margin-right: 2em;
+                }
+            }
+        }
+        .feeds {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .footer-section {
+
+        .fs-items {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .copyright {
+
+        flex-direction: column;
+    }
+}
+
+
+/*==========================================================================
+  576px breakpoints
+==========================================================================*/
+@media (max-width: 576px) {
+
+    .hero-section {
+        h1 {
+            font-size: 1.5em!important;
+            padding: 1em!important;
+        }
+
+        .popular {
+            flex-direction: column;
+            padding-bottom: 3em!important;
+            .popular-item {
+                margin-top: 1em;
+            }
+        }
+    }
+
+    .latest-section {
+
+        .latest-title {
+
+           padding-bottom: 0;
+            h2 {
+                font-size: 1em;
+            }
+
+            .btn-lg {
+                padding: .5em;
+                font-size: 1em;
+            }
+        }
+
+        .latest-items {
+            grid-template-columns: 1fr;
+
+            .latest-item {
+
+                height: auto;
+            }
+        }
+    }
+    .selling-property {
+        .contact-agents  {
+            h4 {
+                font-size: 1.2em;
+            }
+            .agent .agent-info {
+                padding: .4em 0;
+            }
+        }
+    }
+
+    .featured-section {
+
+        .featured-active {
+            padding: 3em 0;
+            .featured-inner {
+                .specs {
+                    padding: 1em!important;
+                    max-width: 100%;
+                    span {
+                        font-size: .7em;
+                        margin-right: 1em;
+                    }
+                }
+            }
+            .featured-prize {
+                padding: 0;
+                .btn-status, .btn-price {
+                    width: 50%;
+                    margin: .5em auto;
+                    padding: 1em;
+                }
+            }
+
+            .f-details {
+                grid-template-columns: 1fr;
+                padding: 2em 1em;
+            }
+
+            .location {
+                h1 {
+                    font-size: 1.5em;
+                }
+            }
+
+        }
+
+        .featured-list {
+            grid-template-columns: 1fr;
+
+            .f-list-item {
+                margin-bottom: 1em;
+            }
+        }
+    }
+
+    .about-section {
+
+        .slogan {
+            h1 {
+                font-size: 2.5em !important;
+            }
+        }
+
+        .information {
+            
+            .info {
+                font-size: 1em!important;
+
+                h4, a {
+                    font-size: 1em!important;
+                }
+            }
+        }
+    }
+
+    .feedback-section {
+
+        h1 {
+            font-size: 1.2em!important
+        }
+
+        h3 {
+            font-size: 1em;
+        }
+
+        .arrows {
+            padding: 0 1em!important;
+        }
+
+        .feeds {
+
+            .feed {
+
+                img {
+                    display: none;
+                }
+
+                .feed-message {
+                    @include border-radius(0px,0px,0px,0px);
+                    margin-left: 0;
+
+                    &:after {
+                        width: 0;
+                    }
+                }   
+            }
+        }
+    }
+
+    .copyright {
+        font-size: .9em!important
+    }
+}

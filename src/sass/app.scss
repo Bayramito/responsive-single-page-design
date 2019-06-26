@@ -1,0 +1,32 @@
+// Variables
+@import 'variables.scss';
+
+// Reset
+@import 'node_modules/reset-css/reset';
+
+//Bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+//Font Awesome
+@import './public/fontawesome/css/all';
+
+// Custom Reset
+@import 'reset';
+
+// Helpers
+@import 'helpers.scss';
+
+//Components
+@import 'components/header.scss';
+@import 'components/latest.scss';
+@import 'components/featured.scss';
+@import 'components/selling-propety.scss';
+@import 'components/add-property.scss';
+@import 'components/about.scss';
+@import 'components/feedback.scss';
+@import 'components/footer.scss';
+@import 'components/copyright.scss';
+
+
+// Responsive
+@import 'responsive.scss';

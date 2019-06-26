@@ -1,0 +1,50 @@
+.footer-section {
+    background: $bg;
+
+    h3, h4 {
+        color: $green;
+    }
+
+    p {
+        color: #c1c1c1;
+    }
+
+    .fa-door-open {
+        color: $red;
+    }
+
+    .fa-facebook {
+        color: #6180c0;
+    }
+
+    .fa-youtube {
+        color: #ef5c4a;
+    }
+
+    .fa-instagram {
+        color: #854b2c;
+    }
+
+    .fa-pinterest {
+        color: #e42c33;
+    }
+
+    .fa-twitter {
+        color: #46bbeb;
+    }
+
+    .fs-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 3em 0;
+        grid-gap: 2em;
+
+        .fs-item{
+
+            a {
+                font-size: 1.5em;
+                margin-right: .5em;
+            }
+        }
+    }
+}

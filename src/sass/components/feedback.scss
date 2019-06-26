@@ -1,0 +1,87 @@
+.feedback-section {
+
+    h1 {
+        padding-top: 1em;
+        font-weight: 600;
+        color: $h2-title;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    h3 {
+        padding-top: 1em;
+        font-weight: 500;
+        margin-bottom: 3em;
+        color: $h2-title;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .row {
+        align-items: center;
+        .arrows {
+            padding: 2em 2em;
+            a {
+                margin-right: .6em;
+                color: $h2-title;
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .feeds {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        padding-top: 1em;
+        margin-bottom: 6em;
+
+        .feed {
+            display: flex;
+            justify-content: space-between;
+          
+            img {
+                margin-top: 1em;
+            }
+            .feed-message {
+                position: relative;
+                display: inline-block;
+                margin-left: 1em;
+                padding: 1.2em;
+                @include border-radius(0px, 30px, 30px, 30px);
+                @include box-shadow(-15px, -5px, 45px, rgba(0,0,0,.3));
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0px;
+                    top:0;
+                    left: -50px;
+                    width: 60px;
+                    height: 60px;
+                    background: radial-gradient(circle at bottom left, transparent 58%, white 70%);
+                }
+                h2 {
+                    color: $red;
+                    font-size: 1.5em;
+                }
+
+                p {
+                    font-weight: 600;
+                    font-family: "Roboto", sans-serif;
+                    font-size: .9em;
+                    line-height: 1.5rem;
+                    word-spacing: .3rem
+                }
+
+                span {
+                    color: $h2-title;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
