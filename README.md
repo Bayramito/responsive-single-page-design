@@ -14,7 +14,7 @@ Express
 
 #Description
 I made one of the sections in the design more dynamic than the other ones, thats why i built a inner server to the application just to simulate like a server. This server provides data to "Feedback" section in the design.  
-To run the server simply  run `mpm run server` in the `Server` folder on directory.  
+To run the server simply  run `npm run server` in the `Server` folder on directory.  
 After that you can easly run the apps itself with `npm start` in main directory.  
 
 Everything in this app made by using `Component` methodology.
